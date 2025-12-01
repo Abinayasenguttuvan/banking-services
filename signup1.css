@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: url('./credit1.webp')
+              no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255,255,255,0.8);
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  
+  .signup-container {
+    width: 90%;
+    max-width: 420px;
+  }
+  
+  .signup-box {
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    color: white;
+  }
+  
+  .signup-box h2 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  label {
+    font-weight: 500;
+    display: block;
+    margin-top: 15px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .signup-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #0d6efd;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .signup-btn:hover {
+    background: #084298;
+  }
+  
+  .login-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .login-link {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  

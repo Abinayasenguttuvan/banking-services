@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credit Login</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login1.css">
+</head>
+
+<body>
+
+  <!-- BACK BUTTON -->
+  <a href="./home2.html"class="back-btn">⬅ Back</a>
+
+  <div class="login-container">
+    <form id="loginForm" class="login-box">
+
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Login to your banking account</p>
+
+      <!-- Email -->
+      <label>Email</label>
+      <input type="email" id="email" placeholder="Enter your email" />
+
+      <!-- Password -->
+      <label>Password</label>
+      <div class="password-wrapper">
+        <input type="password" id="password" placeholder="Enter your password" />
+        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+      </div>
+
+      <!-- Forget Password -->
+      <a href="404.html" class="forget-link">Forget Password?</a>
+
+      <button type="submit"  a href="404.html" class="login-btn">Login</button>
+
+      <!-- SIGN UP SECTION -->
+      <p class="signup-text">
+        Don't have an account?
+        <a href="./signup1.html" class="signup-link">Sign Up</a>
+      </p>
+
+    </form>
+  </div>
+
+  <script src="login1.js"></script>
+
+</body>
+</html>
