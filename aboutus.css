@@ -1,0 +1,162 @@
+/* ========= GLOBAL ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+}
+
+/* ========= HERO SECTION ========= */
+.about-hero {
+    background: url('./about.webp') center/cover no-repeat;
+    height: 55vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* ========= WHO WE ARE ========= */
+.who-we-are,
+.values-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+    padding: 60px 8%;
+    gap: 30px;
+}
+
+.content-box {
+    padding: 20px;
+}
+
+.content-box h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #003366;
+}
+
+.content-box p {
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Background image 1 */
+.bg1 {
+    background: url('./bank1.webp') center/cover no-repeat;
+    height: 450px;
+    border-radius: 15px;
+}
+
+/* ========= VALUES SECTION ========= */
+.values-section ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.values-section li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Background image 2 */
+.bg2 {
+    background: url('https://images.unsplash.com/photo-1563986768494-4dee2763ff3f') center/cover no-repeat;
+    height: 300px;
+    border-radius: 15px;
+}
+
+/* ========= MISSION SECTION ========= */
+.mission-section {
+    background: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a') center/cover no-repeat;
+    position: relative;
+    padding: 80px 8%;
+    color: white;
+    text-align: center;
+}
+
+.mission-section .overlay {
+    background: rgba(0, 30, 70, 0.7);
+}
+
+.mission-content {
+    position: relative;
+    z-index: 1;
+}
+
+.mission-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* ========= TEAM SECTION ========= */
+.team-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.team-section h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.team-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    margin-bottom: 5px;
+    color: #003366;
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}

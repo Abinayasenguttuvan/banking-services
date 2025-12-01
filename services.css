@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* HERO */
+.hero {
+  height: 55vh;
+  background: url("./bank.webp") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  position: absolute;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+/* SERVICES SECTION */
+.services-section {
+  padding: 80px 5%;
+  text-align: center;
+  background: #f4f6fa;
+}
+
+.services-section h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card img {
+  width: 65px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+/* SPECIAL SECTION */
+.special {
+  padding: 80px 5%;
+  text-align: center;
+  background: #eef3fa;
+}
+
+.special h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.special-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.special-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.special-card:hover {
+  transform: scale(1.05);
+}
+
+.special-card img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 26px;
+  }
+}
