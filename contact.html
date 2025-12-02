@@ -3,110 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corporate solutions</title>
+    <title>IT Solutions & Technology</title>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="./contact.css">
-    <link rel="stylesheet" href="./responsive.css">
     
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
-    
+
 <body>
+<!-- ================= HEADER ================= -->
+<header class="header">
 
-    <!-- ================= HEADER ================= -->
-    <header class="header">
-        <a href="index.html">   
-            <img src="./white.webp" alt="Stackly Logo" style="height: 60px; ">
-          </a>
-          
+    <a href="index.html">
+        <img src="./white.webp" alt="Stackly Logo" style="height: 60px; ">
+      </a>
+      
 
-        <!-- <div class="logo">Tech<span>Solutions</span></div> -->
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
 
-        <!-- Navigation -->
-        <nav class="navbar">
-            <ul class="nav-links" >
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-btn">Home <i class="fa-solid fa-caret-down"></i></a>
+            
+                <ul class="dropdown-content">
+                    <li><a href="./index.html">Home 1</a></li>
+                    <li><a href="./home2.html">Home 2</a></li>
+                </ul>
+            </li>
 
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-btn">Home <i class="fa-solid fa-caret-down"></i></a>
-                
-                    <ul class="dropdown-content">
-                        <li><a href="./index.html">Home 1</a></li>
-                        <li><a href="./home2.html">Home 2</a></li>
-                    </ul>
-                </li>
-                
-
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./aboutus.html">About-us</a></li>
-                <li><a href="./accounts.html">Accounts</a></li>
-                <li><a href="./loans.html">Loans</a></li>
-                <li><a href="./dashboard.html">dashboard</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./login.html">Login</a></li>
-
-            </ul>
-        </nav>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./aboutus.html">About-us</a></li>
+            <li><a href="./accounts.html">Accounts</a></li>
+            <li><a href="./loans.html">Loans</a></li>
+            <li><a href="./dashboard.html">dashboard</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./login.html">Login</a></li>
 
 
-        
+        </ul>
+    </nav>
 
-        <!-- Toggle -->
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </div>
 
-    </header>
+    
 
-    <!-- =============================
-         HERO WITH BACKGROUND IMAGE
-    ============================== -->
-    <section class="contact-hero">
-        <div class="overlay"></div>
-        <div class="hero-text">
-            <h1>Contact Us</h1>
-            <p>We are here to support your corporate journey.</p>
-        </div>
-    </section>
+    <!-- Toggle -->
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
 
-    <!-- =============================
-         CONTACT FORM + MAP
-    ============================== -->
-    <section class="contact-section">
-        <div class="container">
+</header>
 
-            <!-- FORM -->
-            <div class="contact-form">
-                <h2>Get In Touch</h2>
 
-                <form id="form">
-                    <input type="text" id="name" placeholder="Full Name">
-                    <input type="email" id="email" placeholder="Email Address">
-                    <input type="text" id="phone" placeholder="Phone Number">
-                    <textarea id="message" placeholder="Your Message"></textarea>
 
-                    <button type="button" onclick="submitForm()">Submit</button>
-                </form>
+    
+
+    <!-- ================= CONTACT HERO ================= -->
+<section class="contact-hero">
+    <div class="contact-hero-overlay">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you. Get in touch with our IT experts.</p>
+    </div>
+</section>
+
+<!-- ================= CONTACT CONTAINER ================= -->
+<section class="contact-container">
+    <div class="contact-form-box">
+        <h2>Get In Touch</h2>
+
+        <form id="contactForm">
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Your Name">
             </div>
 
-            <!-- MAP -->
-            <div class="map-box">
-                <h2>Our Location</h2>
-
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9609139974496!2d80.2432735748414!3d12.91026538739373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d7b6ab5320f%3A0xc398aa5907a2ad2!2sChennai%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700400000000"
-                    width="100%" 
-                    height="300" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-
+            <div class="input-box">
+                <input type="email" id="email" placeholder="Your Email">
             </div>
 
-        </div>
-    </section>
+            <div class="input-box">
+                <input type="text" id="subject" placeholder="Subject">
+            </div>
+
+            <div class="input-box">
+                <textarea id="message" placeholder="Your Message"></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">Send Message</button>
+
+            <p id="error-msg" class="error-msg"></p>
+        </form>
+    </div>
+
+    <div class="contact-map">
+        <iframe 
+            src="https://www.google.com/maps?q=Salem%20Tamil%20Nadu&output=embed"
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
 
 
 <!-- <footer> -->
@@ -135,9 +134,10 @@
                 <ul>
                     <li><a href="./index.html">Home </a></li>
                     <li><a href="./services.html">Services</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./aboutus.html">About-us</a></li>
+                    <li><a href="./accounts.html">Accounts</a></li>
+                    <li><a href="./loans.html">Loans</a></li>
+                    <li><a href="./contact1.html">Contact</a></li>
                 </ul>
             </div>
     
@@ -172,10 +172,41 @@
             <p>© 2025 stackly | All Rights Reserved</p>
         </div>
     </footer>
+    
+    <!-- Script -->
+    <script src="main.js"></script>
+    
 
-<script src="./contact.js"></script>
-<script src="./responsive.js"></script>
 
+
+
+
+    <!-- Script -->
+    <script src="main.js"></script>
+    <script>
+        // CONTACT FORM VALIDATION + 404 REDIRECT
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let subject = document.getElementById("subject").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    let errorMsg = document.getElementById("error-msg");
+
+    if (name === "" || email === "" || subject === "" || message === "") {
+        errorMsg.innerText = "Please fill all details.";
+        return;
+    }
+
+    // Redirect to your 404 page
+    window.location.href = "404.html";
+});
+
+    </script>
+    
 
 </body>
 </html>
+

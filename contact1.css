@@ -1,137 +1,116 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+/* ================= CONTACT HERO ================= */
+.contact-hero {
+    height: 300px;
+    background: url('./credit.webp') no-repeat center/cover;
+    position: relative;
 }
 
-/* =======================
-   HERO BACKGROUND
-======================= */
-.contact-hero {
-    background: url("./credit.webp") center/cover no-repeat;
-    height: 60vh;
-    position: relative;
+.contact-hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.overlay {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.5);
-}
-
-.hero-text {
-    color: white;
-    z-index: 2;
+    color: #fff;
     text-align: center;
 }
 
-.hero-text h1 {
-    font-size: 3rem;
-    animation: fadeDown 1s;
+.contact-hero h1 {
+    font-size: 45px;
+    font-weight: 800;
 }
 
-.hero-text p {
-    font-size: 1.2rem;
+.contact-hero p {
     margin-top: 10px;
-    animation: fadeUp 1s;
+    opacity: 0.9;
 }
 
-/* =======================
-   CONTACT SECTION
-======================= */
-.contact-section {
-    padding: 50px 0;
-    background: #f7f7f7;
+/* ================= CONTACT CONTENT ================= */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 50px 30px;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.contact-form, 
-.map-box {
-    flex: 1 1 450px;
+.contact-form-box {
     background: #fff;
-    padding: 25px;
-    border-radius: 14px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.contact-form h2,
-.map-box h2 {
+.contact-form-box h2 {
     margin-bottom: 20px;
-    color: #333;
+    font-size: 28px;
+    font-weight: 700;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
+.input-box {
     margin-bottom: 15px;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    outline: none;
-    font-size: 1rem;
 }
 
-.contact-form textarea {
-    height: 150px;
-}
-
-.contact-form button {
+.input-box input,
+.input-box textarea {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-box textarea {
+    height: 130px;
+    resize: none;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 14px;
     border: none;
-    background: #0077ff;
-    color: white;
-    font-size: 1.1rem;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #6e00ff, #ff0095);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.contact-form button:hover {
-    background: #005fcc;
+.contact-btn:hover {
+    opacity: 0.8;
 }
 
-/* =======================
-   ANIMATIONS
-======================= */
-@keyframes fadeDown {
-    from { opacity: 0; transform: translateY(-20px); }
-    to   { opacity: 1; transform: translateY(0); }
+.error-msg {
+    margin-top: 10px;
+    color: red;
+    font-weight: 600;
 }
 
-@keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
+/* ================= MAP SECTION ================= */
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    border: none;
+    border-radius: 15px;
 }
 
-/* =======================
-   RESPONSIVE DESIGN
-======================= */
-@media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 2.2rem;
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
     }
 
-    .container {
-        flex-direction: column;
+    .contact-map iframe {
+        min-height: 300px;
     }
 }
 
 @media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 1.8rem;
+    .contact-hero h1 {
+        font-size: 28px;
     }
 }

@@ -13,28 +13,6 @@ body {
 
 
 
-.logo {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.nav-links li a:hover,
-.nav-links .active {
-  color: #00c6ff;
-}
 
 /* HERO */
 .hero {

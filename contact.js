@@ -1,14 +1,25 @@
-function submitForm() {
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let phone = document.getElementById("phone").value.trim();
-    let message = document.getElementById("message").value.trim();
 
-    if (name === "" || email === "" || phone === "" || message === "") {
-        alert("Please fill all details");
-        return;
-    }
 
-    // IF ALL DETAILS FILLED → GO TO 404 PAGE
-    window.location.href = "404.html";
-}
+function togglePassword(id) {
+    const input = document.getElementById(id);
+    input.type = input.type === "password" ? "text" : "password";
+  }
+  
+  function togglePassword(id) {
+    const input = document.getElementById(id);
+    input.type = input.type === "password" ? "text" : "password";
+  }
+  
+  // Simple form handling (no backend, just demo)
+  document.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");}
+  
+  
+    if (loginForm) {
+      loginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        window.location.href = "./hp2 404.html";
+  
+      });
+    };
