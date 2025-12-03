@@ -145,12 +145,18 @@ body {
   margin-bottom: 10px;
 }
 
-.card p {
+
+
+/* .card p {
   font-size: 15px;
   margin-bottom: 20px;
+} */
+.card p {
+  flex-grow: 1; /* pushes button downward */
 }
 
-.btn-secondary {
+
+/* .btn-secondary {
   padding: 10px 25px;
   border: 2px solid #0072ff;
   color: #0072ff;
@@ -161,6 +167,17 @@ body {
   transition: 0.3s;
   text-decoration: none;
   display: inline-block;
+} */
+
+.btn-secondary {
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  display: block;
+  width: fit-content;
+  border-radius: 8px;
+  margin-top: auto; /* ensure bottom alignment */
 }
 
 .btn-secondary:hover {

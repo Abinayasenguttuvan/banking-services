@@ -10,8 +10,77 @@
 body {
   background: #f4f6fa;
 }
+.types-section {
+  padding: 50px 20px;
+  text-align: center;
+}
 
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
 
+/* Card design */
+.type-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;    /* Keeps button at bottom */
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Titles */
+.type-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.type-card p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Checklist */
+.type-card ul {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.type-card ul li {
+  margin-bottom: 8px;
+}
+
+/* Button */
+.btn-primary {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  text-align: center;
+  margin-top: auto;   /* Pushes button to bottom */
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .type-card {
+      padding: 20px;
+  }
+}
 
 
 /* HERO */
@@ -49,7 +118,7 @@ body {
 }
 
 /* ACCOUNT TYPES */
-.types-section {
+/* .types-section {
   padding: 80px 5%;
   text-align: center;
 }
@@ -102,7 +171,7 @@ body {
 
 .btn-primary:hover {
   transform: scale(1.05);
-}
+} */
 
 /* BENEFITS SECTION */
 .benefits {
