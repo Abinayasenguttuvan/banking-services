@@ -49,7 +49,7 @@ body {
 }
 
 /* ===== LOAN TYPES ===== */
-.loan-types {
+/* .loan-types {
     padding: 50px 8%;
     text-align: center;
 }
@@ -100,7 +100,141 @@ body {
 
 .loan-card .btn:hover {
     background: #0055aa;
-}
+} */
+
+/* ================================
+   GLOBAL RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ================================
+     LOAN TYPES SECTION
+  ================================ */
+  .loan-types {
+    padding: 60px 20px;
+    background: #f6faff;
+    text-align: center;
+  }
+  
+  .loan-types h2 {
+    font-size: 2.4rem;
+    color: #222;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  
+  /* ================================
+     GRID LAYOUT
+  ================================ */
+  .loan-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* ================================
+     CARD DESIGN
+  ================================ */
+  .loan-card {
+    background: #ffffff;
+    padding: 28px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .loan-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  }
+  
+  .loan-card h3 {
+    font-size: 1.4rem;
+    color: #0066cc;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .loan-card p {
+    flex-grow: 1;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* ================================
+     BUTTON STYLING
+  ================================ */
+  .loan-card .btn {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-align: center;
+  }
+  
+  .loan-card .btn:hover {
+    background: #004c99;
+  }
+  
+  /* ================================
+     RESPONSIVE MEDIA QUERIES
+  ================================ */
+  
+  /* 💻 Large Screens / Desktops (1200px+) */
+  @media (min-width: 1200px) {
+    .loan-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* 📄 Tablets (1024px and below) */
+  @media (max-width: 1024px) {
+    .loan-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .loan-types h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* 📱 Mobile Devices (768px and below) */
+  @media (max-width: 768px) {
+    .loan-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .loan-card {
+      padding: 25px;
+    }
+  
+    .loan-types h2 {
+      font-size: 1.9rem;
+    }
+  }
+  
+  /* 📱 Small Mobile Screens (480px and below) */
+  @media (max-width: 480px) {
+    .loan-card .btn {
+      padding: 14px 0;
+    }
+  }
+  
 
 /* ===== EMI HIGHLIGHTS ===== */
 .emi-section {
