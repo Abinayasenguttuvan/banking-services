@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- ===== PAGE LOADER ===== -->
+<div id="loader">
+  <div class="loader-ring"></div>
+  <p>SecureBank Loading...</p>
+</div>
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- ================= HEADER ================= -->
     <header class="header">
@@ -52,15 +60,29 @@
     </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <!-- <div class="overlay"></div> -->
-    <div class="hero-content">
-      <h1>Welcome to SecureBank</h1>
-      <p>Your trusted partner for digital banking solutions.</p>
-      <a href ="./accounts.html">
-      <button class="btn-primary" >Open an Account</button></a>
-    </div>
-  </section>
+  
+<section class="hero">
+
+  <!-- Video Background -->
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="./bank.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay -->
+  <div class="hero-overlay"></div>
+
+  <!-- Content -->
+  <div class="hero-content">
+    <h1>Welcome to SecureBank</h1>
+    <p>Your trusted partner for digital banking solutions.</p>
+    <a href="./accounts.html">
+      <button class="btn-primary">Open an Account</button>
+    </a>
+  </div>
+
+</section>
+
 
   <!-- Features Section -->
   <section class="features">
@@ -113,6 +135,10 @@
       </div>
 
     </div>
+    <div class="blob blue"></div>
+<div class="blob pink"></div>
+<div class="blob green"></div>
+
   </section>
 
   <!-- <footer> -->
@@ -183,6 +209,8 @@
 
     
 <script src="./responsive.js"></script>
+<script src="./index.js"></script>
+
 
 
 
