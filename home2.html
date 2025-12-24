@@ -7,6 +7,7 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="./responsive.css">
     <link rel="stylesheet" href="./style1.css">
+    
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+ 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- ================= HEADER ================= -->
     <header class="header">
@@ -51,103 +53,111 @@
 
     </header>
 
+    
+    <!-- ================= HERO ================= -->
+<header class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="./credit.mp4">
+    </video>
 
-    <!-- HERO SECTION -->
-<section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h1>Smart Credit Card Management Made Simple</h1>
-        <p>Track expenses, manage multiple cards, explore offers, and stay protected with AI-powered insights.</p><br>
-        <div class="hero-buttons">
-            <a href="./404.html" class="btn">Explore Features</a>
-            <!-- <a href="#" class="btn-secondary">Get Started</a> -->
-        </div>
+    <div id="particles-js"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content reveal">
+        <h1>Smarter Credit Card Management</h1>
+        <p>
+            One platform to track spending, explore rewards,
+            manage limits, and stay financially confident.
+        </p>
+        <a href="./404.html" class="btn-primary">Explore Platform</a>
+    </div>
+</header>
+
+<!-- ================= FEATURED STRIP ================= -->
+<section class="featured">
+    <div class="featured-card zoom">
+        <img src="./multi11.webp">
+        <h3>Multicard Management</h3>
+    </div>
+    <div class="featured-card zoom">
+        <video autoplay muted loop>
+            <source src="./credit1.webm">
+        </video>
+        <h3>Real-Time Insights</h3>
+    </div>
+    <div class="featured-card zoom">
+        <img src="./spend.webp">
+        <h3> Smart Spend analysis</h3>
     </div>
 </section>
 
-<!-- FEATURES SECTION -->
-<section class="features">
-    <h2>Everything You Need to Manage Your Cards</h2>
+<!-- ================= MAIN CONTENT ================= -->
+<main class="container">
 
-    <div class="feature-grid">
+    <!-- LEFT CONTENT -->
+    <div class="content">
 
-        <div class="feature-box">
-            <img src="./multi11.webp" alt="">
-            <h3>Multi-Card Management</h3>
-            <p>Add unlimited cards, check balances, limits, statements & more.</p>
-        </div>
-
-        <div class="feature-box">
-            <img src="./spend.webp" alt="">
-            <h3>Smart Spend Analytics</h3>
-            <p>Colorful charts for expenses, categories, due dates and reports.</p>
-        </div>
-
-        <div class="feature-box">
-            <img src="./reward.webp" alt="">
-            <h3>Rewards Tracking</h3>
-            <p>View reward points, cashback, benefits, and redeem options.</p>
-        </div>
-
-        <div class="feature-box">
-            <img src="./AI.webp" alt="">
-            <h3>Advanced Security</h3>
-            <p>AI fraud alerts, instant card lock/unlock, tokenized payments.</p>
-        </div>
+        <article class="post reveal">
+            <video autoplay muted loop>
+                <source src="./credit2.mp4">
+            </video><br>
+            <h2>AI-Powered Fraud Detection</h2><br>
+            <p>
+                Our intelligent monitoring system detects suspicious
+                activity and alerts you instantly to keep your money safe.
+            </p>
+        </article>
 
     </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-box reveal">
+            <h3>Card Types</h3>
+            <ul>
+                <li>Rewards Credit Cards</li>
+                <li>Travel Credit Cards</li>
+                <li>Business Credit Cards</li>
+                <li>Secured Credit Cards</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-box reveal">
+            <h3>Quick Benefits</h3>
+            <p>✔ Bill reminders</p>
+            <p>✔ Smart spending alerts</p>
+            <p>✔ One-tap card freeze</p>
+            <p>✔ Reward tracking</p>
+        </div>
+
+        <div class="sidebar-box reveal">
+            <video autoplay muted loop>
+                <source src="./credit3.mp4">
+            </video>
+        </div>
+
+    </aside>
+</main>
+
+<!-- ================= CTA ================= -->
+
+
+<section class="cta reveal">
+    <div id="cta-particles"></div>
+
+    <h2>Take Control of Your Credit Today</h2>
+    <p>Join thousands managing their credit cards smarter.</p><br>
+    <a href="./404.html" class="btn-primary">Get Started</a>
 </section>
 
-<!-- TOOLS SECTION -->
-<section class="tools-section">
-    <h2>Powerful Tools That Help You Save More</h2>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="new.js"></script>
 
-    <div class="tools-grid">
-        <div class="tool-box">
-            <h3>EMI Calculator</h3>
-            <p>Plan EMI amounts with clear interest breakdown.</p>
-        </div>
+    
 
-        <div class="tool-box">
-            <h3>Payment Reminder</h3>
-            <p>Get notified before your due dates across all cards.</p>
-        </div>
 
-        <div class="tool-box">
-            <h3>Spend Insights</h3>
-            <p>Get AI-powered insights on where your money goes.</p>
-        </div>
-
-        <div class="tool-box">
-            <h3>Best Card Suggestions</h3>
-            <p>Use the right card for maximum cashback & rewards.</p>
-        </div>
-    </div>
-</section>
-
-<!-- OFFERS SECTION -->
-<section class="offers">
-    <h2>Latest Offers & Deals</h2>
-    <div class="offers-grid">
-        <div class="offer-card">5% Cashback on Travel Bookings</div>
-        <div class="offer-card">Flat Discounts on Shopping</div>
-        <div class="offer-card">Zero Fuel Surcharge</div>
-        <div class="offer-card">Deals on Online Subscriptions</div>
-    </div>
-</section>
-
-<!-- DOWNLOAD APP SECTION -->
-<section class="app-section">
-    <div class="app-content">
-        <h2>Experience Banking On the Go</h2>
-        <p>Access your cards, insights, rewards & offers anytime, anywhere.</p>
-        <div class="app-buttons">
-            <a href="./404.html" class="btn">App Store</a>
-            <a href="./404.html" class="btn-secondary">Google Play</a>
-        </div>
-    </div>
-</section>
-
+    
      <!-- <footer> -->
         <footer class="footer">
             <div class="footer-container">
@@ -214,6 +224,8 @@
     
         
     <script src="./responsive.js"></script>
+    <script src="./home2.js"></script>
+    
     
     
     
