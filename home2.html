@@ -7,6 +7,8 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="./responsive.css">
     <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,6 +17,15 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+<style>
+
+/* heading */
+.video-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+</style>
 <body>
  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -110,34 +121,38 @@
 
     </div>
 
+    
     <!-- SIDEBAR -->
-    <aside class="sidebar">
+<aside class="sidebar">
 
-        <div class="sidebar-box reveal">
-            <h3>Card Types</h3>
-            <ul>
-                <li>Rewards Credit Cards</li>
-                <li>Travel Credit Cards</li>
-                <li>Business Credit Cards</li>
-                <li>Secured Credit Cards</li>
-            </ul>
-        </div>
+    <div class="sidebar-bg"></div>
 
-        <div class="sidebar-box reveal">
-            <h3>Quick Benefits</h3>
-            <p>✔ Bill reminders</p>
-            <p>✔ Smart spending alerts</p>
-            <p>✔ One-tap card freeze</p>
-            <p>✔ Reward tracking</p>
-        </div>
+    <div class="sidebar-box reveal slide-left">
+        <h3><i class="fa-solid fa-credit-card"></i> Card Types</h3>
+        <ul>
+            <li><i class="fa-solid fa-gift"></i> Rewards Credit Cards</li>
+            <li><i class="fa-solid fa-plane"></i> Travel Credit Cards</li>
+            <li><i class="fa-solid fa-briefcase"></i> Business Credit Cards</li>
+            <li><i class="fa-solid fa-shield-halved"></i> Secured Credit Cards</li>
+        </ul>
+    </div>
 
-        <div class="sidebar-box reveal">
-            <video autoplay muted loop>
-                <source src="./credit3.mp4">
-            </video>
-        </div>
+    <div class="sidebar-box reveal slide-left">
+        <h3><i class="fa-solid fa-bolt"></i> Quick Benefits</h3>
+        <p><i class="fa-solid fa-bell"></i> Bill reminders</p>
+        <p><i class="fa-solid fa-chart-line"></i> Smart spending alerts</p>
+        <p><i class="fa-solid fa-lock"></i> One-tap card freeze</p>
+        <p><i class="fa-solid fa-coins"></i> Reward tracking</p>
+    </div>
 
-    </aside>
+    <div class="sidebar-box reveal slide-left video-box">
+        <video autoplay muted loop playsinline>
+            <source src="./credit3.mp4">
+        </video><br>
+        <h3>Credit Card Management</h3>
+    </div>
+
+</aside>
 </main>
 
 <!-- ================= CTA ================= -->
