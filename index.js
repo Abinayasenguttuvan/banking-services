@@ -8,7 +8,7 @@ window.addEventListener("load",()=>{
 window.addEventListener("load", () => {
     const loader = document.getElementById("page-loader");
     loader.style.opacity = "0";
-    loader.style.transition = "opacity .2s ease";
+    loader.style.transition = "opacity .8s ease";
     setTimeout(() => loader.remove(), 900);
   });
 
@@ -68,3 +68,14 @@ window.addEventListener("scroll",()=>{
     }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
