@@ -1,0 +1,699 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* body {
+  background: radial-gradient(
+  circle at top,
+  #7d99d1 0%,
+  #eef4ff 45%,
+  #ffffff 100%
+)}; */
+
+  
+  /* HERO SECTION */
+  .hero {
+    padding: 80px 20px;
+    overflow: hidden;
+  }
+  
+  .hero-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  /* LEFT CONTENT */
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #0f2e2a;
+  }
+  
+  .hero-content h1 span {
+    color: #18a999;
+    position: relative;
+  }
+  
+  .hero-content h1 span::after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    /* background: #18a999; */
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-radius: 20px;
+  }
+  
+  .hero-content p {
+    color: #6b7c78;
+    max-width: 500px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .btn-primary {
+    background: #18a999;
+    color: #fff;
+    padding: 14px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background: #12897c;
+  }
+  
+  .btn-secondary {
+    color: #0f2e2a;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .hero-rating {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* RIGHT VISUAL */
+  .hero-visual {
+    flex: 1;
+    position: relative;
+    height: 420px;
+  }
+  
+  .card {
+    width: 320px;
+    position: absolute;
+    border-radius: 20px;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .card-1 {
+    top: 40px;
+    right: 60px;
+    z-index: 2;
+  }
+  
+  .card-2 {
+    bottom: 20px;
+    right: 0;
+    animation-delay: 2s;
+  }
+  
+  /* FLOAT ANIMATION */
+  @keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(2deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 992px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content h1 {
+      font-size: 40px;
+    }
+  
+    .hero-visual {
+      height: 350px;
+    }
+  
+    .card {
+      width: 260px;
+    }
+  
+    .card-1 {
+      right: 20%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-content h1 {
+      font-size: 32px;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-visual {
+      height: 300px;
+    }
+  
+    .card {
+      width: 220px;
+    }
+  }
+
+  
+ 
+  .banking-section {
+    padding: 80px 20px;
+    background: #ffffff;
+  }
+  
+  .banking-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  
+  /* LEFT */
+  .banking-left h2 {
+    font-size: 44px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #0b2e27;
+  }
+  
+  .banking-left h2 span {
+    color: #1aa59a;
+  }
+  
+  .banking-left p {
+    color: #6b7c78;
+    max-width: 480px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .btn-feature {
+    display: inline-block;
+    background: #0e8f7b;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .btn-feature:hover {
+    background: #0b6f60;
+  }
+  
+  /* RIGHT */
+  .banking-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .feature-card {
+    padding: 28px;
+    border-radius: 16px;
+    background: #f7fafa;
+    transition: 0.4s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  }
+  
+  .feature-card.active {
+    background: #ffffff;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  }
+  
+  .feature-card .icon {
+    font-size: 28px;
+    color: #1aa59a;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0b2e27;
+  }
+  
+  .feature-card p {
+    font-size: 14px;
+    color: #6b7c78;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .feature-card a {
+    color: #1aa59a;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  /* TABLET */
+  @media (max-width: 992px) {
+    .banking-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .banking-left p {
+      margin: auto;
+    }
+  
+    .banking-right {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* MOBILE */
+  @media (max-width: 576px) {
+    .banking-left h2 {
+      font-size: 32px;
+    }
+  
+    .banking-right {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  
+  
+  
+  /* BIGGER IMAGE SPACE */
+.payment-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 520px;
+    perspective: 1200px;
+  }
+  
+  /* 3D WRAPPER */
+  .card-3d-wrapper {
+    width: 520px;
+    max-width: 100%;
+    transform-style: preserve-3d;
+  }
+  
+  /* FLIP CARD */
+  .flip-card {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+    animation: flip360 10s linear infinite;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+  }
+  
+  /* HOVER EFFECT */
+  .flip-card:hover {
+    animation-play-state: paused;
+    transform: rotateY(180deg) scale(1.08);
+  }
+  
+  /* 360 DEG ROTATION */
+  @keyframes flip360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  /* WALLET CARD POSITION */
+  .wallet-card {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    background: #ffffff;
+    color: #0b2e27;
+    padding: 26px;
+    border-radius: 18px;
+    max-width: 260px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  }
+  
+  /* TABLET */
+  @media (max-width: 992px) {
+    .card-3d-wrapper {
+      width: 420px;
+    }
+  
+    .wallet-card {
+      position: static;
+      margin-top: 25px;
+    }
+  }
+  
+  /* MOBILE */
+  @media (max-width: 576px) {
+    .card-3d-wrapper {
+      width: 320px;
+    }
+  
+    .payment-visual {
+      min-height: 420px;
+    }
+  }
+
+
+
+
+  
+  .payment-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    color: #fff;
+  }
+  
+  /* VIDEO BACKGROUND */
+  .video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+  /* DARK OVERLAY */
+  .payment-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(12, 60, 55, 0.85);
+    z-index: -1;
+  }
+  
+  /* LAYOUT */
+  .payment-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  
+  /* LEFT */
+  .payment-content h2 {
+    font-size: 46px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  
+  .payment-content p {
+    max-width: 500px;
+    margin-bottom: 25px;
+    line-height: 1.7;
+    opacity: 0.9;
+  }
+  
+  .payment-list {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+  
+  .payment-list li {
+    margin-bottom: 10px;
+  }
+  
+  .btn-learn {
+    display: inline-block;
+    background: #fff;
+    color: #0e8f7b;
+    padding: 14px 34px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* RIGHT CARD */
+  .payment-visual {
+    perspective: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-3d-wrapper {
+    width: 560px;
+    max-width: 100%;
+  }
+  
+  .credit-card {
+    width: 100%;
+    border-radius: 26px;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.45);
+    transform-style: preserve-3d;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 992px) {
+    .payment-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .card-3d-wrapper {
+      width: 420px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .payment-content h2 {
+      font-size: 32px;
+    }
+  
+    .card-3d-wrapper {
+      width: 320px;
+    }
+  }
+
+  
+
+
+
+
+
+  .steps-section {
+    padding: 100px 20px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden; /* IMPORTANT */
+  }
+  
+  .steps-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+  }
+  
+  .steps-section span {
+    color: #1abc9c;
+  }
+  
+  .subtitle {
+    max-width: 600px;
+    margin: 15px auto 60px;
+    color: #777;
+  }
+  
+  /* TIMELINE */
+  .steps-line {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .steps-line .line {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ddd;
+    z-index: 0;
+  }
+  
+  .step-circle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg,#1abc9c,#16a085);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  /* CARDS GRID */
+  .steps-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  
+  .step-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .step-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 70px rgba(26,188,156,0.3);
+  }
+  
+  .icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  /* MOBILE FIX */
+  @media (max-width: 900px) {
+    .steps-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .steps-line {
+      display: none;
+    }
+  }
+
+  
+
+  .testimonials-section {
+    padding: 120px 20px;
+    background: radial-gradient(circle at top, #f2fffb, #ffffff);
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+  }
+  
+  .testimonials-section span {
+    color: #16a085;
+  }
+  
+  .subtitle {
+    margin: 15px auto 60px;
+    max-width: 600px;
+    color: #777;
+  }
+  
+  /* MARQUEE */
+  .marquee-wrapper {
+    perspective: 1200px;
+    overflow: hidden;
+  }
+  
+  .marquee-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+  }
+  
+  /* CARD */
+  .review-card {
+    min-width: 320px;
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 22px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+  }
+  
+  .review-card:hover {
+    transform: translateZ(40px) scale(1.05);
+  }
+  
+  .review-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .review-card h4 {
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  .review-card span {
+    font-size: 14px;
+    color: #16a085;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .review-card {
+      min-width: 260px;
+    }
+  
+    .testimonials-section h2 {
+      font-size: 32px;
+    }
+  }
+
+  
+  /* PARTICLES BACKGROUND – BLUE THEME */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  
+    /* Premium blue fintech gradient */
+    background: radial-gradient(
+      circle at top,
+      #eaf2ff 0%,
+      #f5f9ff 40%,
+      #ffffff 100%
+    );
+  }
+  
+  /* Ensure content stays above particles */
+  section {
+    position: relative;
+    z-index: 2;
+  }
+
+  
+  

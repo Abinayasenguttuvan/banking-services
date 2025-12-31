@@ -124,7 +124,7 @@ particlesJS("particles-js", {
   
       /* BLUE PARTICLES */
       color: {
-        value: "#0b2e27"
+        value: "#2f6df6"
       },
   
       shape: {
@@ -145,7 +145,7 @@ particlesJS("particles-js", {
       line_linked: {
         enable: true,
         distance: 160,
-        color: "#0b2e27",
+        color: "#2f6df6",
         opacity: 0.18,
         width: 1
       },
@@ -186,42 +186,4 @@ particlesJS("particles-js", {
     retina_detect: true
   });
   
-
-
-  
-
-
-
-const cards = document.querySelectorAll('.feature-card');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.transform = 'translateY(0)';
-      entry.target.style.opacity = '1';
-    }
-  });
-}, { threshold: 0.2 });
-
-cards.forEach(card => {
-  card.style.transform = 'translateY(40px)';
-  card.style.opacity = '0';
-  card.style.transition = '0.7s ease';
-  observer.observe(card);
-});
-
-
-
-
-  document.querySelectorAll('.banking-right .feature-card').forEach(card => {
-    card.addEventListener('click', () => {
-      // remove zoom from other cards
-      document.querySelectorAll('.banking-right .feature-card')
-        .forEach(c => c.classList.remove('is-zoomed'));
-
-      // toggle zoom on clicked card
-      card.classList.toggle('is-zoomed');
-    });
-  });
-
 
